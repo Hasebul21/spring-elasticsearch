@@ -3,6 +3,7 @@ package com.example.elasticsearch.demo;
 
 import com.example.elasticsearch.demo.entity.Post;
 import com.example.elasticsearch.demo.repo.PostRepo;
+import com.example.elasticsearch.demo.service.PostService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
@@ -30,6 +31,9 @@ public class DemoApplication implements CommandLineRunner {
 	@Autowired
 	private RestHighLevelClient client;
 
+	@Autowired
+	private PostService postService;
+
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
@@ -38,15 +42,9 @@ public class DemoApplication implements CommandLineRunner {
 	@Override
 	@Transactional
 	public void run(String... args) throws Exception {
-		Post post = new Post();
-		post.setId("1");
-		post.setTitle("Elasticsearch with Spring Boot");
-		post.setContent("This is a demo post for Elasticsearch with Spring Boot.");
-		post.setCreatedAt("2023-10-01T10:00:00Z");
-
-		postRepo.save(post);
-
-		System.out.println(searchByName("Elasticsearch with Spring Boot"));
+		//postService.findPostGreaterThanTenLike();
+		//postService.findPostAfterDate();
+		postService.findPostZeroDisLike();
 	}
 
 	public List<Post> searchByName(String keyword) throws IOException {

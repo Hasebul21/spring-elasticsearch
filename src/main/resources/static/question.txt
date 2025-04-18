@@ -1,0 +1,59 @@
+Find all posts.
+
+Find posts by a specific author name.
+
+Get posts that have more than 10 likes.
+
+Get posts that have more dislikes than likes.
+
+Find posts created after a specific date.
+
+Find posts containing the keyword "Spring".
+
+Get posts with exactly 0 dislikes.
+
+Find the most liked post.
+
+Get the top 5 most recent posts.
+
+Find posts with "React" in the title.
+
+Count how many posts each author has written.
+
+Find posts where likes are between 10 and 20.
+
+Get posts that were created in November 2023.
+
+Find posts where content includes "Docker" or "Kubernetes".
+
+Get posts sorted by created date (newest first).
+
+Search for posts by partial match in the title.
+
+Find posts that have more than 5 likes and less than 3 dislikes.
+
+Get all posts written by authors whose name starts with "A".
+
+Find the average number of likes across all posts.
+
+Get the post with the earliest created date.
+
+Find posts that were created on weekends.
+
+Search for posts where content length is more than 100 characters.
+
+Get posts with no content field value.
+
+Find posts where title contains both "Java" and "Spring".
+
+Find posts where likes equal dislikes.
+
+Get total number of posts.
+
+List all distinct author names.
+
+Find posts where content includes "testing".
+
+Get posts created before December 1, 2023.
+
+Get posts with more than 15 likes or more than 5 dislikes.
